@@ -13,6 +13,8 @@
 		0FC3214F16D3694B0001201B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3214D16D3694B0001201B /* Credits.rtf */; };
 		0FC3215216D3694B0001201B /* PJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3215116D3694B0001201B /* PJAppDelegate.m */; };
 		0FC3215516D3694B0001201B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3215316D3694B0001201B /* MainMenu.xib */; };
+		0FC3215D16D37DBC0001201B /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3215B16D37DBC0001201B /* License.txt */; };
+		0FC3216216D382940001201B /* plain.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3216116D382940001201B /* plain.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		0FC3215016D3694B0001201B /* PJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJAppDelegate.h; sourceTree = "<group>"; };
 		0FC3215116D3694B0001201B /* PJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJAppDelegate.m; sourceTree = "<group>"; };
 		0FC3215416D3694B0001201B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0FC3215B16D37DBC0001201B /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		0FC3216116D382940001201B /* plain.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = plain.icns; path = ../plain.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		0FC3214516D3694B0001201B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FC3216116D382940001201B /* plain.icns */,
+				0FC3215B16D37DBC0001201B /* License.txt */,
 				0FC3214616D3694B0001201B /* Plain Jane-Info.plist */,
 				0FC3214716D3694B0001201B /* InfoPlist.strings */,
 				0FC3214A16D3694B0001201B /* main.m */,
@@ -157,6 +163,8 @@
 				0FC3214916D3694B0001201B /* InfoPlist.strings in Resources */,
 				0FC3214F16D3694B0001201B /* Credits.rtf in Resources */,
 				0FC3215516D3694B0001201B /* MainMenu.xib in Resources */,
+				0FC3215D16D37DBC0001201B /* License.txt in Resources */,
+				0FC3216216D382940001201B /* plain.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
