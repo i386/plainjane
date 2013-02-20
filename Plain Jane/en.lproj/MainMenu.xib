@@ -1312,7 +1312,7 @@
 						<object class="NSTextField" id="851908816">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{107, 153}, {127, 37}}</string>
+							<string key="NSFrame">{{100, 155}, {140, 35}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="673738812"/>
@@ -1323,7 +1323,7 @@
 								<int key="NSCellFlags2">272630784</int>
 								<string key="NSContents">Plain Jane</string>
 								<object class="NSFont" key="NSSupport">
-									<string key="NSName">Lobster1.4</string>
+									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">29</double>
 									<int key="NSfFlags">16</int>
 								</object>
@@ -1348,7 +1348,7 @@
 						<object class="NSTextField" id="673738812">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 119}, {306, 26}}</string>
+							<string key="NSFrame">{{17, 113}, {306, 34}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="880646224"/>
@@ -1358,7 +1358,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="215511658">
 								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">272629760</int>
-								<string key="NSContents">There is nothing wrong with being plain.</string>
+								<string key="NSContents">There is nothing wrong with being plain. Plain Jane makes all your pastes plain text.</string>
 								<object class="NSFont" key="NSSupport" id="996884285">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">13</double>
@@ -1383,7 +1383,7 @@
 						<object class="NSTextField" id="880646224">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 60}, {306, 51}}</string>
+							<string key="NSFrame">{{17, 71}, {288, 34}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="476064383"/>
@@ -1393,7 +1393,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="107956496">
 								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">272629760</int>
-								<string key="NSContents">Plain Jane makes all your pastes plain text. Just make sure you have enabled access for assistive devices in Accessibility preferences.</string>
+								<string key="NSContents">Just make sure you have enabled access for assistive devices in Accessibility preferences.</string>
 								<reference key="NSSupport" ref="996884285"/>
 								<string key="NSCellIdentifier">_NS:9</string>
 								<reference key="NSControlView" ref="880646224"/>
@@ -1406,7 +1406,7 @@
 						<object class="NSButton" id="476064383">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{94, 16}, {152, 32}}</string>
+							<string key="NSFrame">{{85, 16}, {152, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="1058651959"/>
@@ -3373,22 +3373,6 @@
 						<reference key="object" ref="673738812"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="215511658"/>
-							<object class="IBNSLayoutConstraint" id="941169462">
-								<reference key="firstItem" ref="673738812"/>
-								<int key="firstAttribute">8</int>
-								<int key="relation">0</int>
-								<nil key="secondItem"/>
-								<int key="secondAttribute">0</int>
-								<float key="multiplier">1</float>
-								<object class="IBLayoutConstant" key="constant">
-									<double key="value">26</double>
-								</object>
-								<float key="priority">1000</float>
-								<reference key="containingView" ref="673738812"/>
-								<int key="scoringType">3</int>
-								<float key="scoringTypeFloat">9</float>
-								<int key="contentType">1</int>
-							</object>
 						</array>
 						<reference key="parent" ref="439893737"/>
 					</object>
@@ -3406,11 +3390,6 @@
 						<int key="objectID">574</int>
 						<reference key="object" ref="920401987"/>
 						<reference key="parent" ref="439893737"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">579</int>
-						<reference key="object" ref="941169462"/>
-						<reference key="parent" ref="673738812"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">580</int>
@@ -3659,15 +3638,11 @@
 				<string key="537.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="56.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<array class="NSMutableArray" key="570.IBNSViewMetadataConstraints">
-					<reference ref="941169462"/>
-				</array>
 				<boolean value="NO" key="570.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="570.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="571.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="573.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="574.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="579.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="58.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<boolean value="NO" key="580.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="580.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3718,20 +3693,6 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">PJAppDelegate</string>
 					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="closeApp:">id</string>
-						<string key="hideMainWindow:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="closeApp:">
-							<string key="name">closeApp:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="hideMainWindow:">
-							<string key="name">hideMainWindow:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
 					<object class="NSMutableDictionary" key="outlets">
 						<string key="NS.key.0">window</string>
 						<string key="NS.object.0">NSWindow</string>
