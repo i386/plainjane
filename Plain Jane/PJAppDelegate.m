@@ -12,7 +12,19 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    _enabled = YES;
+    
+    _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [_statusItem setIcon:[NSImage imageNamed:@"status-item-menu"] withAlternateIcon:[NSImage imageNamed:@"status-item-menu-alt"]];
+    [_statusItem setHighlightMode:YES];
+    [_statusItem setMenu:_statusMenu];
+   
+    
     [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event) {
+        
+        //Return if disabled
+        if (!_enabled) return;
+        
         NSUInteger flags = [event modifierFlags];
         int altDown = flags & NSCommandKeyMask;
         
@@ -48,4 +60,24 @@
 }
 
 
+- (IBAction)enablePlainPastes:(id)sender
+{
+    NSMenuItem *item = sender;
+    
+    if (item.state == NSOnState)
+    {
+        [item setState:NSOffState];
+    }
+    else if (item.state == NSOffState)
+    {
+        [item setState:NSOnState];
+    }
+    
+    _enabled = item.state == NSOnState;
+}
+
+- (IBAction)quitApp:(id)sender
+{
+     [[NSApplication sharedApplication] terminate:self];
+}
 @end

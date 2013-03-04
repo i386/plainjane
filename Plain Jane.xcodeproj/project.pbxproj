@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FAD95E716E32EF100A16277 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAD95E616E32EF100A16277 /* QuartzCore.framework */; };
+		0FAD960416E348E200A16277 /* status-item-menu-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960016E348E200A16277 /* status-item-menu-alt.png */; };
+		0FAD960516E348E200A16277 /* status-item-menu-alt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960116E348E200A16277 /* status-item-menu-alt@2x.png */; };
+		0FAD960616E348E200A16277 /* status-item-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960216E348E200A16277 /* status-item-menu.png */; };
+		0FAD960716E348E200A16277 /* status-item-menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960316E348E200A16277 /* status-item-menu@2x.png */; };
+		0FAD960A16E349B100A16277 /* NSStatusItem+Iconology.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAD960916E349B100A16277 /* NSStatusItem+Iconology.m */; };
 		0FC3213F16D3694B0001201B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC3213E16D3694B0001201B /* Cocoa.framework */; };
 		0FC3214916D3694B0001201B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3214716D3694B0001201B /* InfoPlist.strings */; };
 		0FC3214B16D3694B0001201B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3214A16D3694B0001201B /* main.m */; };
@@ -18,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FAD95E616E32EF100A16277 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0FAD960016E348E200A16277 /* status-item-menu-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-menu-alt.png"; sourceTree = "<group>"; };
+		0FAD960116E348E200A16277 /* status-item-menu-alt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-menu-alt@2x.png"; sourceTree = "<group>"; };
+		0FAD960216E348E200A16277 /* status-item-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-menu.png"; sourceTree = "<group>"; };
+		0FAD960316E348E200A16277 /* status-item-menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-menu@2x.png"; sourceTree = "<group>"; };
+		0FAD960816E349B100A16277 /* NSStatusItem+Iconology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStatusItem+Iconology.h"; sourceTree = "<group>"; };
+		0FAD960916E349B100A16277 /* NSStatusItem+Iconology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStatusItem+Iconology.m"; sourceTree = "<group>"; };
 		0FC3213B16D3694B0001201B /* Plain Jane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plain Jane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC3213E16D3694B0001201B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0FC3214116D3694B0001201B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -41,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAD95E716E32EF100A16277 /* QuartzCore.framework in Frameworks */,
 				0FC3213F16D3694B0001201B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +65,7 @@
 		0FC3213216D3694B0001201B = {
 			isa = PBXGroup;
 			children = (
+				0FAD95E616E32EF100A16277 /* QuartzCore.framework */,
 				0FDF7D8E16D42C6800041F5E /* plain.icns */,
 				0FC3214416D3694B0001201B /* Plain Jane */,
 				0FC3213D16D3694B0001201B /* Frameworks */,
@@ -88,7 +103,8 @@
 		0FC3214416D3694B0001201B /* Plain Jane */ = {
 			isa = PBXGroup;
 			children = (
-				0FC3216316D384D30001201B /* Plain Jane.entitlements */,
+				0FAD960816E349B100A16277 /* NSStatusItem+Iconology.h */,
+				0FAD960916E349B100A16277 /* NSStatusItem+Iconology.m */,
 				0FC3215016D3694B0001201B /* PJAppDelegate.h */,
 				0FC3215116D3694B0001201B /* PJAppDelegate.m */,
 				0FC3215316D3694B0001201B /* MainMenu.xib */,
@@ -100,6 +116,11 @@
 		0FC3214516D3694B0001201B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FAD960016E348E200A16277 /* status-item-menu-alt.png */,
+				0FAD960116E348E200A16277 /* status-item-menu-alt@2x.png */,
+				0FAD960216E348E200A16277 /* status-item-menu.png */,
+				0FAD960316E348E200A16277 /* status-item-menu@2x.png */,
+				0FC3216316D384D30001201B /* Plain Jane.entitlements */,
 				0FC3215B16D37DBC0001201B /* License.txt */,
 				0FC3214616D3694B0001201B /* Plain Jane-Info.plist */,
 				0FC3214716D3694B0001201B /* InfoPlist.strings */,
@@ -167,6 +188,10 @@
 				0FC3215516D3694B0001201B /* MainMenu.xib in Resources */,
 				0FC3215D16D37DBC0001201B /* License.txt in Resources */,
 				0FDF7D8F16D42C6800041F5E /* plain.icns in Resources */,
+				0FAD960416E348E200A16277 /* status-item-menu-alt.png in Resources */,
+				0FAD960516E348E200A16277 /* status-item-menu-alt@2x.png in Resources */,
+				0FAD960616E348E200A16277 /* status-item-menu.png in Resources */,
+				0FAD960716E348E200A16277 /* status-item-menu@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +204,7 @@
 			files = (
 				0FC3214B16D3694B0001201B /* main.m in Sources */,
 				0FC3215216D3694B0001201B /* PJAppDelegate.m in Sources */,
+				0FAD960A16E349B100A16277 /* NSStatusItem+Iconology.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

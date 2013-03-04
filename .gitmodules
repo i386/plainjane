@@ -1,6 +1,0 @@
-[submodule "dependencies/StatusItem"]
-	path = dependencies/StatusItem
-	url = git://github.com/acidprime/StatusItem.git
-[submodule "dependencies/NSStatusItem-Iconology"]
-	path = dependencies/NSStatusItem-Iconology
-	url = git://github.com/evadne/NSStatusItem-Iconology.git

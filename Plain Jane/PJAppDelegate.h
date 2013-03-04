@@ -8,8 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface PJAppDelegate : NSObject <NSApplicationDelegate>
+#import "NSStatusItem+Iconology.h"
+
+@interface PJAppDelegate : NSObject <NSApplicationDelegate> {
+    NSStatusItem *_statusItem;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+@property (strong) IBOutlet NSMenu *statusMenu;
+@property (assign) BOOL enabled;
+
+- (IBAction)enablePlainPastes:(id)sender;
+- (IBAction)quitApp:(id)sender;
 
 @end

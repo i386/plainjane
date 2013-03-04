@@ -54,7 +54,7 @@
 }
 
 @property (retain) NSProgressIndicator *indicator;
-@property (assign) NSView __weak *enclosingView;
+@property (weak) NSView *enclosingView;
 
 @end
 
@@ -84,7 +84,7 @@
 	
 	[self addSubview:indicator];
 	
-	[indicator center];
+//	[indicator center];
 		
 	return self;
 
@@ -205,7 +205,7 @@
 	[self setView:progressIndicatorHolder];
 //	progressIndicatorHolder.enclosingView = self;
 
-	[progressIndicatorHolder.indicator center];
+//	[progressIndicatorHolder.indicator center];
 	[progressIndicatorHolder.indicator startAnimation:self];
 	
 	CALayer * aViewLayer = [CALayer layer];
