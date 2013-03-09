@@ -12,6 +12,11 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    _startAtLoginController = [[StartAtLoginController alloc] initWithIdentifier:@"com.whimsy.PlainJaneHelperApp"];
+    
+    NSCellStateValue state = _startAtLoginController.enabled ? NSOnState : NSOffState;
+    [_startAtLoginMenuItem setState:state];
+    
     _enabled = YES;
     
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
@@ -59,6 +64,26 @@
     [[NSApplication sharedApplication] terminate:self];
 }
 
+-(void)showAbout:(id)sender
+{
+    [[NSApplication sharedApplication] orderFrontStandardAboutPanel:self];
+}
+
+-(void)startAtLogin:(id)sender
+{
+    NSMenuItem *item = sender;
+    
+    if (item.state == NSOnState)
+    {
+        [item setState:NSOffState];
+    }
+    else if (item.state == NSOffState)
+    {
+        [item setState:NSOnState];
+    }
+    
+    [_startAtLoginController setStartAtLogin:(item.state == NSOnState)];
+}
 
 - (IBAction)enablePlainPastes:(id)sender
 {
@@ -73,7 +98,7 @@
         [item setState:NSOnState];
     }
     
-    _enabled = item.state == NSOnState;
+    _enabled = (item.state == NSOnState);
 }
 
 - (IBAction)quitApp:(id)sender

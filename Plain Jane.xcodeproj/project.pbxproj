@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F8F88D916EACA1B00104DF0 /* PlainJaneHelperApp.app in Copy helper app */ = {isa = PBXBuildFile; fileRef = 0F8F88D616EAC9F900104DF0 /* PlainJaneHelperApp.app */; };
 		0FAD95E716E32EF100A16277 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAD95E616E32EF100A16277 /* QuartzCore.framework */; };
 		0FAD960416E348E200A16277 /* status-item-menu-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960016E348E200A16277 /* status-item-menu-alt.png */; };
 		0FAD960516E348E200A16277 /* status-item-menu-alt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960116E348E200A16277 /* status-item-menu-alt@2x.png */; };
 		0FAD960616E348E200A16277 /* status-item-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960216E348E200A16277 /* status-item-menu.png */; };
 		0FAD960716E348E200A16277 /* status-item-menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960316E348E200A16277 /* status-item-menu@2x.png */; };
 		0FAD960A16E349B100A16277 /* NSStatusItem+Iconology.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAD960916E349B100A16277 /* NSStatusItem+Iconology.m */; };
+		0FAF149316E866FD005B5E72 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAF149216E866FD005B5E72 /* StartAtLoginController.m */; };
+		0FAF149716E86729005B5E72 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAF149616E86729005B5E72 /* ServiceManagement.framework */; };
+		0FAF14DA16EABEF1005B5E72 /* jane.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0FAF14D916EABEF1005B5E72 /* jane.icns */; };
 		0FC3213F16D3694B0001201B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC3213E16D3694B0001201B /* Cocoa.framework */; };
 		0FC3214916D3694B0001201B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3214716D3694B0001201B /* InfoPlist.strings */; };
 		0FC3214B16D3694B0001201B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3214A16D3694B0001201B /* main.m */; };
@@ -20,10 +24,34 @@
 		0FC3215216D3694B0001201B /* PJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3215116D3694B0001201B /* PJAppDelegate.m */; };
 		0FC3215516D3694B0001201B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3215316D3694B0001201B /* MainMenu.xib */; };
 		0FC3215D16D37DBC0001201B /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3215B16D37DBC0001201B /* License.txt */; };
-		0FDF7D8F16D42C6800041F5E /* plain.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF7D8E16D42C6800041F5E /* plain.icns */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0F8F88D516EAC9F900104DF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F8F88D116EAC9F800104DF0 /* PlainJaneHelperApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0F8F88B116EAC9F800104DF0;
+			remoteInfo = PlainJaneHelperApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0FAF14C716E868F5005B5E72 /* Copy helper app */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				0F8F88D916EACA1B00104DF0 /* PlainJaneHelperApp.app in Copy helper app */,
+			);
+			name = "Copy helper app";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0F8F88D116EAC9F800104DF0 /* PlainJaneHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PlainJaneHelperApp.xcodeproj; path = PlainJaneHelperApp/PlainJaneHelperApp.xcodeproj; sourceTree = "<group>"; };
 		0FAD95E616E32EF100A16277 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0FAD960016E348E200A16277 /* status-item-menu-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-menu-alt.png"; sourceTree = "<group>"; };
 		0FAD960116E348E200A16277 /* status-item-menu-alt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-menu-alt@2x.png"; sourceTree = "<group>"; };
@@ -31,6 +59,10 @@
 		0FAD960316E348E200A16277 /* status-item-menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-menu@2x.png"; sourceTree = "<group>"; };
 		0FAD960816E349B100A16277 /* NSStatusItem+Iconology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStatusItem+Iconology.h"; sourceTree = "<group>"; };
 		0FAD960916E349B100A16277 /* NSStatusItem+Iconology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStatusItem+Iconology.m"; sourceTree = "<group>"; };
+		0FAF149116E866FD005B5E72 /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartAtLoginController.h; path = dependencies/StartAtLoginController/StartAtLoginController.h; sourceTree = SOURCE_ROOT; };
+		0FAF149216E866FD005B5E72 /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartAtLoginController.m; path = dependencies/StartAtLoginController/StartAtLoginController.m; sourceTree = SOURCE_ROOT; };
+		0FAF149616E86729005B5E72 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		0FAF14D916EABEF1005B5E72 /* jane.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = jane.icns; path = ../jane.icns; sourceTree = "<group>"; };
 		0FC3213B16D3694B0001201B /* Plain Jane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plain Jane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC3213E16D3694B0001201B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0FC3214116D3694B0001201B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,7 +78,6 @@
 		0FC3215416D3694B0001201B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0FC3215B16D37DBC0001201B /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		0FC3216316D384D30001201B /* Plain Jane.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Plain Jane.entitlements"; sourceTree = "<group>"; };
-		0FDF7D8E16D42C6800041F5E /* plain.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = plain.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAF149716E86729005B5E72 /* ServiceManagement.framework in Frameworks */,
 				0FAD95E716E32EF100A16277 /* QuartzCore.framework in Frameworks */,
 				0FC3213F16D3694B0001201B /* Cocoa.framework in Frameworks */,
 			);
@@ -62,11 +94,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8F88D216EAC9F800104DF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F8F88D616EAC9F900104DF0 /* PlainJaneHelperApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FAF149416E86701005B5E72 /* StartAtLoginController */ = {
+			isa = PBXGroup;
+			children = (
+				0FAF149116E866FD005B5E72 /* StartAtLoginController.h */,
+				0FAF149216E866FD005B5E72 /* StartAtLoginController.m */,
+			);
+			name = StartAtLoginController;
+			path = "Plain Jane";
+			sourceTree = "<group>";
+		};
+		0FAF149516E8670D005B5E72 /* NSStatusItem+Iconology */ = {
+			isa = PBXGroup;
+			children = (
+				0FAD960816E349B100A16277 /* NSStatusItem+Iconology.h */,
+				0FAD960916E349B100A16277 /* NSStatusItem+Iconology.m */,
+			);
+			name = "NSStatusItem+Iconology";
+			path = "Plain Jane";
+			sourceTree = "<group>";
+		};
 		0FC3213216D3694B0001201B = {
 			isa = PBXGroup;
 			children = (
-				0FAD95E616E32EF100A16277 /* QuartzCore.framework */,
-				0FDF7D8E16D42C6800041F5E /* plain.icns */,
+				0F8F88D116EAC9F800104DF0 /* PlainJaneHelperApp.xcodeproj */,
+				0FAF149416E86701005B5E72 /* StartAtLoginController */,
+				0FAF149516E8670D005B5E72 /* NSStatusItem+Iconology */,
 				0FC3214416D3694B0001201B /* Plain Jane */,
 				0FC3213D16D3694B0001201B /* Frameworks */,
 				0FC3213C16D3694B0001201B /* Products */,
@@ -84,27 +145,19 @@
 		0FC3213D16D3694B0001201B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0FC3213E16D3694B0001201B /* Cocoa.framework */,
-				0FC3214016D3694B0001201B /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0FC3214016D3694B0001201B /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
+				0FAF149616E86729005B5E72 /* ServiceManagement.framework */,
+				0FAD95E616E32EF100A16277 /* QuartzCore.framework */,
 				0FC3214116D3694B0001201B /* AppKit.framework */,
 				0FC3214216D3694B0001201B /* CoreData.framework */,
 				0FC3214316D3694B0001201B /* Foundation.framework */,
+				0FC3213E16D3694B0001201B /* Cocoa.framework */,
 			);
-			name = "Other Frameworks";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		0FC3214416D3694B0001201B /* Plain Jane */ = {
 			isa = PBXGroup;
 			children = (
-				0FAD960816E349B100A16277 /* NSStatusItem+Iconology.h */,
-				0FAD960916E349B100A16277 /* NSStatusItem+Iconology.m */,
 				0FC3215016D3694B0001201B /* PJAppDelegate.h */,
 				0FC3215116D3694B0001201B /* PJAppDelegate.m */,
 				0FC3215316D3694B0001201B /* MainMenu.xib */,
@@ -116,6 +169,7 @@
 		0FC3214516D3694B0001201B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FAF14D916EABEF1005B5E72 /* jane.icns */,
 				0FAD960016E348E200A16277 /* status-item-menu-alt.png */,
 				0FAD960116E348E200A16277 /* status-item-menu-alt@2x.png */,
 				0FAD960216E348E200A16277 /* status-item-menu.png */,
@@ -141,6 +195,7 @@
 				0FC3213716D3694B0001201B /* Sources */,
 				0FC3213816D3694B0001201B /* Frameworks */,
 				0FC3213916D3694B0001201B /* Resources */,
+				0FAF14C716E868F5005B5E72 /* Copy helper app */,
 			);
 			buildRules = (
 			);
@@ -171,12 +226,28 @@
 			mainGroup = 0FC3213216D3694B0001201B;
 			productRefGroup = 0FC3213C16D3694B0001201B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0F8F88D216EAC9F800104DF0 /* Products */;
+					ProjectRef = 0F8F88D116EAC9F800104DF0 /* PlainJaneHelperApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0FC3213A16D3694B0001201B /* Plain Jane */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0F8F88D616EAC9F900104DF0 /* PlainJaneHelperApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PlainJaneHelperApp.app;
+			remoteRef = 0F8F88D516EAC9F900104DF0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0FC3213916D3694B0001201B /* Resources */ = {
@@ -187,11 +258,11 @@
 				0FC3214F16D3694B0001201B /* Credits.rtf in Resources */,
 				0FC3215516D3694B0001201B /* MainMenu.xib in Resources */,
 				0FC3215D16D37DBC0001201B /* License.txt in Resources */,
-				0FDF7D8F16D42C6800041F5E /* plain.icns in Resources */,
 				0FAD960416E348E200A16277 /* status-item-menu-alt.png in Resources */,
 				0FAD960516E348E200A16277 /* status-item-menu-alt@2x.png in Resources */,
 				0FAD960616E348E200A16277 /* status-item-menu.png in Resources */,
 				0FAD960716E348E200A16277 /* status-item-menu@2x.png in Resources */,
+				0FAF14DA16EABEF1005B5E72 /* jane.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +276,7 @@
 				0FC3214B16D3694B0001201B /* main.m in Sources */,
 				0FC3215216D3694B0001201B /* PJAppDelegate.m in Sources */,
 				0FAD960A16E349B100A16277 /* NSStatusItem+Iconology.m in Sources */,
+				0FAF149316E866FD005B5E72 /* StartAtLoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,13 +373,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Plain Jane/Plain Jane.entitlements";
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "Mac Developer: James Dumay (H5HMB59MLA)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plain Jane/Plain Jane-Prefix.pch";
 				INFOPLIST_FILE = "Plain Jane/Plain Jane-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "C064B780-83E3-4562-918C-9CD45AA76522";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -316,13 +389,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Plain Jane/Plain Jane.entitlements";
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "Mac Developer: James Dumay (H5HMB59MLA)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plain Jane/Plain Jane-Prefix.pch";
 				INFOPLIST_FILE = "Plain Jane/Plain Jane-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "C064B780-83E3-4562-918C-9CD45AA76522";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

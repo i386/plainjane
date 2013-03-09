@@ -1,0 +1,3 @@
+[submodule "dependencies/StartAtLoginController"]
+	path = dependencies/StartAtLoginController
+	url = git://github.com/alexzielenski/StartAtLoginController.git
