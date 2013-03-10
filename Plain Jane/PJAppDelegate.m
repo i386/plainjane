@@ -13,9 +13,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     _startAtLoginController = [[StartAtLoginController alloc] initWithIdentifier:@"com.whimsy.PlainJaneHelperApp"];
-    
-    NSCellStateValue state = _startAtLoginController.enabled ? NSOnState : NSOffState;
-    [_startAtLoginMenuItem setState:state];
+    [_startAtLoginMenuItem setState:(_startAtLoginController.enabled ? NSOnState : NSOffState)];
     
     _enabled = YES;
     
@@ -46,17 +44,16 @@
         };
     }];
     
-    [NSApp activateIgnoringOtherApps:YES];
-}
-
--(void)applicationDidBecomeActive:(NSNotification *)notification
-{
-    [_window makeKeyAndOrderFront:nil];
+    if (![_startAtLoginController enabled])
+    {
+        [_mainWindow makeKeyAndOrderFront:self];
+        [NSApp activateIgnoringOtherApps:YES];
+    }
 }
 
 - (IBAction)hideMainWindow:(id)sender
 {
-    [_window close];
+    [_mainWindow close];
 }
 
 - (IBAction)closeApp:(id)sender
@@ -72,23 +69,17 @@
 -(void)startAtLogin:(id)sender
 {
     NSMenuItem *item = sender;
-    
-    if (item.state == NSOnState)
-    {
-        [item setState:NSOffState];
-    }
-    else if (item.state == NSOffState)
-    {
-        [item setState:NSOnState];
-    }
-    
-    [_startAtLoginController setStartAtLogin:(item.state == NSOnState)];
+    [_startAtLoginController setStartAtLogin:[self swizzleState:item]];
 }
 
 - (IBAction)enablePlainPastes:(id)sender
 {
     NSMenuItem *item = sender;
-    
+    _enabled = [self swizzleState:item];
+}
+
+-(BOOL)swizzleState:(NSMenuItem*)item
+{
     if (item.state == NSOnState)
     {
         [item setState:NSOffState];
@@ -97,12 +88,7 @@
     {
         [item setState:NSOnState];
     }
-    
-    _enabled = (item.state == NSOnState);
+    return (item.state == NSOnState);
 }
 
-- (IBAction)quitApp:(id)sender
-{
-     [[NSApplication sharedApplication] terminate:self];
-}
 @end

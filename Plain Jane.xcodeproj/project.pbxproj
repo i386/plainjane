@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F8F88D916EACA1B00104DF0 /* PlainJaneHelperApp.app in Copy helper app */ = {isa = PBXBuildFile; fileRef = 0F8F88D616EAC9F900104DF0 /* PlainJaneHelperApp.app */; };
+		0F7042CB16EC1932000EB002 /* PlainJaneHelperApp.app in Copy helper app */ = {isa = PBXBuildFile; fileRef = 0FD7BBBF16EC150B000B84B8 /* PlainJaneHelperApp.app */; };
+		0F8972D716EADCA50061FB58 /* PlainJaneHelperApp.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = 0F8972D616EADCA50061FB58 /* PlainJaneHelperApp.xcodeproj */; };
 		0FAD95E716E32EF100A16277 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAD95E616E32EF100A16277 /* QuartzCore.framework */; };
 		0FAD960416E348E200A16277 /* status-item-menu-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960016E348E200A16277 /* status-item-menu-alt.png */; };
 		0FAD960516E348E200A16277 /* status-item-menu-alt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD960116E348E200A16277 /* status-item-menu-alt@2x.png */; };
@@ -27,9 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0F8F88D516EAC9F900104DF0 /* PBXContainerItemProxy */ = {
+		0FD7BBBE16EC150B000B84B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0F8F88D116EAC9F800104DF0 /* PlainJaneHelperApp.xcodeproj */;
+			containerPortal = 0F8972D616EADCA50061FB58 /* PlainJaneHelperApp.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0F8F88B116EAC9F800104DF0;
 			remoteInfo = PlainJaneHelperApp;
@@ -39,11 +40,11 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		0FAF14C716E868F5005B5E72 /* Copy helper app */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				0F8F88D916EACA1B00104DF0 /* PlainJaneHelperApp.app in Copy helper app */,
+				0F7042CB16EC1932000EB002 /* PlainJaneHelperApp.app in Copy helper app */,
 			);
 			name = "Copy helper app";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F8F88D116EAC9F800104DF0 /* PlainJaneHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PlainJaneHelperApp.xcodeproj; path = PlainJaneHelperApp/PlainJaneHelperApp.xcodeproj; sourceTree = "<group>"; };
+		0F8972D616EADCA50061FB58 /* PlainJaneHelperApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PlainJaneHelperApp.xcodeproj; path = PlainJaneHelperApp/PlainJaneHelperApp.xcodeproj; sourceTree = "<group>"; };
 		0FAD95E616E32EF100A16277 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0FAD960016E348E200A16277 /* status-item-menu-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-menu-alt.png"; sourceTree = "<group>"; };
 		0FAD960116E348E200A16277 /* status-item-menu-alt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-menu-alt@2x.png"; sourceTree = "<group>"; };
@@ -94,14 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8F88D216EAC9F800104DF0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0F8F88D616EAC9F900104DF0 /* PlainJaneHelperApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0FAF149416E86701005B5E72 /* StartAtLoginController */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +118,7 @@
 		0FC3213216D3694B0001201B = {
 			isa = PBXGroup;
 			children = (
-				0F8F88D116EAC9F800104DF0 /* PlainJaneHelperApp.xcodeproj */,
+				0F8972D616EADCA50061FB58 /* PlainJaneHelperApp.xcodeproj */,
 				0FAF149416E86701005B5E72 /* StartAtLoginController */,
 				0FAF149516E8670D005B5E72 /* NSStatusItem+Iconology */,
 				0FC3214416D3694B0001201B /* Plain Jane */,
@@ -185,6 +178,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0FD7BBBB16EC150B000B84B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FD7BBBF16EC150B000B84B8 /* PlainJaneHelperApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,8 +229,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 0F8F88D216EAC9F800104DF0 /* Products */;
-					ProjectRef = 0F8F88D116EAC9F800104DF0 /* PlainJaneHelperApp.xcodeproj */;
+					ProductGroup = 0FD7BBBB16EC150B000B84B8 /* Products */;
+					ProjectRef = 0F8972D616EADCA50061FB58 /* PlainJaneHelperApp.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -240,11 +241,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		0F8F88D616EAC9F900104DF0 /* PlainJaneHelperApp.app */ = {
+		0FD7BBBF16EC150B000B84B8 /* PlainJaneHelperApp.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = PlainJaneHelperApp.app;
-			remoteRef = 0F8F88D516EAC9F900104DF0 /* PBXContainerItemProxy */;
+			remoteRef = 0FD7BBBE16EC150B000B84B8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -263,6 +264,7 @@
 				0FAD960616E348E200A16277 /* status-item-menu.png in Resources */,
 				0FAD960716E348E200A16277 /* status-item-menu@2x.png in Resources */,
 				0FAF14DA16EABEF1005B5E72 /* jane.icns in Resources */,
+				0F8972D716EADCA50061FB58 /* PlainJaneHelperApp.xcodeproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,14 +375,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Plain Jane/Plain Jane.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer: James Dumay (H5HMB59MLA)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: James Dumay";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plain Jane/Plain Jane-Prefix.pch";
 				INFOPLIST_FILE = "Plain Jane/Plain Jane-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "C064B780-83E3-4562-918C-9CD45AA76522";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,14 +391,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Plain Jane/Plain Jane.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer: James Dumay (H5HMB59MLA)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: James Dumay";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plain Jane/Plain Jane-Prefix.pch";
 				INFOPLIST_FILE = "Plain Jane/Plain Jane-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "C064B780-83E3-4562-918C-9CD45AA76522";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

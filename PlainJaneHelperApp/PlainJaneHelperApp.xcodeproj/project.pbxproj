@@ -31,6 +31,7 @@
 		0F8F88C716EAC9F800104DF0 /* PHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAppDelegate.m; sourceTree = "<group>"; };
 		0F8F88CA16EAC9F800104DF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0F8F88D716EACA0300104DF0 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		0F8F88DE16EACFB800104DF0 /* PlainJaneHelperApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PlainJaneHelperApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +50,6 @@
 		0F8F88A816EAC9F800104DF0 = {
 			isa = PBXGroup;
 			children = (
-				0F8F88D716EACA0300104DF0 /* ServiceManagement.framework */,
 				0F8F88BA16EAC9F800104DF0 /* PlainJaneHelperApp */,
 				0F8F88B316EAC9F800104DF0 /* Frameworks */,
 				0F8F88B216EAC9F800104DF0 /* Products */,
@@ -67,6 +67,7 @@
 		0F8F88B316EAC9F800104DF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F8F88D716EACA0300104DF0 /* ServiceManagement.framework */,
 				0F8F88B416EAC9F800104DF0 /* Cocoa.framework */,
 				0F8F88B616EAC9F800104DF0 /* Other Frameworks */,
 			);
@@ -86,6 +87,7 @@
 		0F8F88BA16EAC9F800104DF0 /* PlainJaneHelperApp */ = {
 			isa = PBXGroup;
 			children = (
+				0F8F88DE16EACFB800104DF0 /* PlainJaneHelperApp.entitlements */,
 				0F8F88C616EAC9F800104DF0 /* PHAppDelegate.h */,
 				0F8F88C716EAC9F800104DF0 /* PHAppDelegate.m */,
 				0F8F88C916EAC9F800104DF0 /* MainMenu.xib */,
@@ -268,13 +270,15 @@
 		0F8F88CF16EAC9F800104DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer: James Dumay (H5HMB59MLA)";
+				CODE_SIGN_ENTITLEMENTS = PlainJaneHelperApp/PlainJaneHelperApp.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: James Dumay";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlainJaneHelperApp/PlainJaneHelperApp-Prefix.pch";
 				INFOPLIST_FILE = "PlainJaneHelperApp/PlainJaneHelperApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "C064B780-83E3-4562-918C-9CD45AA76522";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -282,13 +286,15 @@
 		0F8F88D016EAC9F800104DF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer: James Dumay (H5HMB59MLA)";
+				CODE_SIGN_ENTITLEMENTS = PlainJaneHelperApp/PlainJaneHelperApp.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: James Dumay";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlainJaneHelperApp/PlainJaneHelperApp-Prefix.pch";
 				INFOPLIST_FILE = "PlainJaneHelperApp/PlainJaneHelperApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "C064B780-83E3-4562-918C-9CD45AA76522";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -312,6 +318,7 @@
 				0F8F88D016EAC9F800104DF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,14 +16,13 @@
     StartAtLoginController *_startAtLoginController;
 }
 
-@property (assign) IBOutlet NSWindow *window;
 @property (strong) IBOutlet NSMenu *statusMenu;
 @property (strong) IBOutlet NSMenuItem *startAtLoginMenuItem;
 @property (assign) BOOL enabled;
+@property (strong) IBOutlet NSWindow *mainWindow;
 
 - (IBAction)enablePlainPastes:(id)sender;
 - (IBAction)startAtLogin:(id)sender;
-- (IBAction)quitApp:(id)sender;
 - (IBAction)showAbout:(id)sender;
 
 @end
