@@ -24,7 +24,6 @@
 		0FC3214F16D3694B0001201B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3214D16D3694B0001201B /* Credits.rtf */; };
 		0FC3215216D3694B0001201B /* PJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3215116D3694B0001201B /* PJAppDelegate.m */; };
 		0FC3215516D3694B0001201B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3215316D3694B0001201B /* MainMenu.xib */; };
-		0FC3215D16D37DBC0001201B /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FC3215B16D37DBC0001201B /* License.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +76,6 @@
 		0FC3215016D3694B0001201B /* PJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJAppDelegate.h; sourceTree = "<group>"; };
 		0FC3215116D3694B0001201B /* PJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJAppDelegate.m; sourceTree = "<group>"; };
 		0FC3215416D3694B0001201B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		0FC3215B16D37DBC0001201B /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		0FC3216316D384D30001201B /* Plain Jane.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Plain Jane.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,7 +166,6 @@
 				0FAD960216E348E200A16277 /* status-item-menu.png */,
 				0FAD960316E348E200A16277 /* status-item-menu@2x.png */,
 				0FC3216316D384D30001201B /* Plain Jane.entitlements */,
-				0FC3215B16D37DBC0001201B /* License.txt */,
 				0FC3214616D3694B0001201B /* Plain Jane-Info.plist */,
 				0FC3214716D3694B0001201B /* InfoPlist.strings */,
 				0FC3214A16D3694B0001201B /* main.m */,
@@ -258,7 +255,6 @@
 				0FC3214916D3694B0001201B /* InfoPlist.strings in Resources */,
 				0FC3214F16D3694B0001201B /* Credits.rtf in Resources */,
 				0FC3215516D3694B0001201B /* MainMenu.xib in Resources */,
-				0FC3215D16D37DBC0001201B /* License.txt in Resources */,
 				0FAD960416E348E200A16277 /* status-item-menu-alt.png in Resources */,
 				0FAD960516E348E200A16277 /* status-item-menu-alt@2x.png in Resources */,
 				0FAD960616E348E200A16277 /* status-item-menu.png in Resources */,
