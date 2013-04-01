@@ -66,6 +66,11 @@
     [[NSApplication sharedApplication] orderFrontStandardAboutPanel:self];
 }
 
+- (IBAction)startAtLoginChecked:(id)sender
+{
+    [self startAtLogin:_startAtLoginMenuItem];
+}
+
 -(void)startAtLogin:(id)sender
 {
     NSMenuItem *item = sender;
