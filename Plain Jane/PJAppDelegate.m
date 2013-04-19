@@ -31,17 +31,22 @@
         NSUInteger flags = [event modifierFlags];
         int altDown = flags & NSCommandKeyMask;
         
-        //Command + V
-        if (([event keyCode] == 9) && altDown) {
-            NSPasteboard *pboard = [NSPasteboard generalPasteboard];
-            
-            NSString* value = [pboard stringForType:NSStringPboardType];
-            
-            if (value) {
-                [pboard clearContents];
-                [pboard setString:value forType:NSStringPboardType];
-            }
-        };
+        NSRunningApplication *finderApp = [[NSRunningApplication runningApplicationsWithBundleIdentifier:@"com.apple.finder"] lastObject];
+        
+        if (finderApp && !finderApp.isActive)
+        {
+            //Command + V
+            if (([event keyCode] == 9) && altDown) {
+                NSPasteboard *pboard = [NSPasteboard generalPasteboard];
+                
+                NSString* value = [pboard stringForType:NSStringPboardType];
+                
+                if (value) {
+                    [pboard clearContents];
+                    [pboard setString:value forType:NSStringPboardType];
+                }
+            };
+        }
     }];
     
     if (![_startAtLoginController enabled])
