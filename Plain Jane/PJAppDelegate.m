@@ -25,16 +25,12 @@
     
     [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event) {
         
-        //Return if disabled
-        if (!_enabled) return;
-        
-        NSUInteger flags = [event modifierFlags];
-        int altDown = flags & NSCommandKeyMask;
-        
-        NSRunningApplication *finderApp = [[NSRunningApplication runningApplicationsWithBundleIdentifier:@"com.apple.finder"] lastObject];
-        
-        if (finderApp && !finderApp.isActive)
+        //Do not turn on if its not enabled or finder is active
+        if (!_enabled && ![self isFinderActive])
         {
+            NSUInteger flags = [event modifierFlags];
+            int altDown = flags & NSCommandKeyMask;
+            
             //Command + V
             if (([event keyCode] == 9) && altDown) {
                 NSPasteboard *pboard = [NSPasteboard generalPasteboard];
@@ -54,6 +50,18 @@
         [_mainWindow makeKeyAndOrderFront:self];
         [NSApp activateIgnoringOtherApps:YES];
     }
+}
+
+- (BOOL)isFinderActive
+{
+    NSArray *finderApps = [NSRunningApplication runningApplicationsWithBundleIdentifier:@"com.apple.finder"];
+    
+    if (finderApps.count >= 1)
+    {
+        NSRunningApplication *finder = [finderApps lastObject];
+        return finder.isActive;
+    }
+    return NO;
 }
 
 - (IBAction)hideMainWindow:(id)sender
