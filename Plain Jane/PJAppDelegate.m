@@ -26,13 +26,15 @@
     [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event) {
         
         //Do not turn on if its not enabled or finder is active
-        if (!_enabled && ![self isFinderActive])
-        {
-            NSUInteger flags = [event modifierFlags];
-            int altDown = flags & NSCommandKeyMask;
+        
+        NSUInteger flags = [event modifierFlags];
+        int altDown = flags & NSCommandKeyMask;
+        
+        //Command + V
+        if (([event keyCode] == 9) && altDown) {
             
-            //Command + V
-            if (([event keyCode] == 9) && altDown) {
+            if (_enabled && ![self isFinderActive])
+            {
                 NSPasteboard *pboard = [NSPasteboard generalPasteboard];
                 
                 NSString* value = [pboard stringForType:NSStringPboardType];
@@ -41,7 +43,7 @@
                     [pboard clearContents];
                     [pboard setString:value forType:NSStringPboardType];
                 }
-            };
+            }
         }
     }];
     
