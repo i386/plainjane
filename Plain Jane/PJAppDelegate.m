@@ -81,6 +81,11 @@
     [[NSApplication sharedApplication] orderFrontStandardAboutPanel:self];
 }
 
+- (IBAction)showHelp:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://whimsyapps.uservoice.com/knowledgebase/topics/31642-plain-jane"]];
+}
+
 - (IBAction)startAtLoginChecked:(id)sender
 {
     [self startAtLogin:_startAtLoginMenuItem];

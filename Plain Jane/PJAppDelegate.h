@@ -24,5 +24,6 @@
 - (IBAction)enablePlainPastes:(id)sender;
 - (IBAction)startAtLogin:(id)sender;
 - (IBAction)showAbout:(id)sender;
+- (IBAction)showHelp:(id)sender;
 
 @end
